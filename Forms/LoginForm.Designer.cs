@@ -35,17 +35,17 @@ namespace MotorPartsInventory.Forms
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.panelRight = new System.Windows.Forms.Panel();
-            this.lblHeading = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.cbShowPass = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.cbShowPass = new System.Windows.Forms.CheckBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblHeading = new System.Windows.Forms.Label();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.mainPanel.SuspendLayout();
@@ -98,24 +98,29 @@ namespace MotorPartsInventory.Forms
             this.panelRight.Size = new System.Drawing.Size(556, 577);
             this.panelRight.TabIndex = 0;
             // 
-            // lblHeading
+            // comboBox1
             // 
-            this.lblHeading.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblHeading.Font = new System.Drawing.Font("Impact", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeading.Location = new System.Drawing.Point(12, 12);
-            this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(532, 80);
-            this.lblHeading.TabIndex = 0;
-            this.lblHeading.Text = "Inventory Management System";
-            this.lblHeading.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Admin",
+            "Cashier",
+            "Stock Staff / Helper"});
+            this.comboBox1.Location = new System.Drawing.Point(186, 146);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(171, 24);
+            this.comboBox1.TabIndex = 4;
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(87, 180);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 16);
-            this.label1.TabIndex = 1;
+            this.label3.CausesValidation = false;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 92);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(532, 37);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Log In as:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel1
             // 
@@ -130,86 +135,82 @@ namespace MotorPartsInventory.Forms
             this.panel1.Size = new System.Drawing.Size(553, 375);
             this.panel1.TabIndex = 2;
             // 
-            // lblUsername
+            // btnLogin
             // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(95, 43);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(117, 20);
-            this.lblUsername.TabIndex = 0;
-            this.lblUsername.Text = "Username:";
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Location = new System.Drawing.Point(99, 67);
-            this.txtUsername.Multiline = true;
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(339, 49);
-            this.txtUsername.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(95, 138);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Password:";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(99, 161);
-            this.txtPassword.Multiline = true;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(339, 49);
-            this.txtPassword.TabIndex = 3;
+            this.btnLogin.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(117, 266);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(339, 49);
+            this.btnLogin.TabIndex = 5;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
             // 
             // cbShowPass
             // 
             this.cbShowPass.AutoSize = true;
             this.cbShowPass.Font = new System.Drawing.Font("Lucida Console", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbShowPass.Location = new System.Drawing.Point(99, 229);
+            this.cbShowPass.Location = new System.Drawing.Point(117, 201);
             this.cbShowPass.Name = "cbShowPass";
             this.cbShowPass.Size = new System.Drawing.Size(160, 21);
             this.cbShowPass.TabIndex = 4;
             this.cbShowPass.Text = "Show Password";
             this.cbShowPass.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // txtPassword
             // 
-            this.label3.CausesValidation = false;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 92);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(532, 37);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Log In as:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.txtPassword.Font = new System.Drawing.Font("Lucida Console", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(117, 166);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(339, 20);
+            this.txtPassword.TabIndex = 3;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
-            // comboBox1
+            // label2
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Admin",
-            "Cashier",
-            "Stock Staff / Helper"});
-            this.comboBox1.Location = new System.Drawing.Point(186, 146);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 24);
-            this.comboBox1.TabIndex = 4;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(113, 143);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Password:";
             // 
-            // btnLogin
+            // txtUsername
             // 
-            this.btnLogin.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(99, 289);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(339, 49);
-            this.btnLogin.TabIndex = 5;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.txtUsername.Font = new System.Drawing.Font("Lucida Console", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(117, 89);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(339, 20);
+            this.txtUsername.TabIndex = 1;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(113, 65);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(117, 20);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Username:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(87, 180);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 16);
+            this.label1.TabIndex = 1;
+            // 
+            // lblHeading
+            // 
+            this.lblHeading.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblHeading.Font = new System.Drawing.Font("Impact", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeading.Location = new System.Drawing.Point(12, 12);
+            this.lblHeading.Name = "lblHeading";
+            this.lblHeading.Size = new System.Drawing.Size(532, 80);
+            this.lblHeading.TabIndex = 0;
+            this.lblHeading.Text = "Inventory Management System";
+            this.lblHeading.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // LoginForm
             // 
@@ -218,6 +219,7 @@ namespace MotorPartsInventory.Forms
             this.ClientSize = new System.Drawing.Size(1119, 577);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.panelLeft);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
